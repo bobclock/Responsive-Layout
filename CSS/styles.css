@@ -129,13 +129,99 @@ footer .mobile {
 }
 
 
-.social, .tablet {
+.social, .tablet, .copyright {
   display: none;
 }
 
 /*Media queries*/
 
-@media (min-width: 720px) {
+@media (min-width: 726px) {
+
+.clearfix {
+  clear: both;
+}
+
+/*Nav changes to name with nav as inline*/
+
+.nav li a, .nav li {
+  display: inline-block;
+}
+
+.nav h1 {
+  width: 120px;
+}
+
+.nav li h1 {
+  background-color: rgb(250,250,250);
+}
+
+.nav .name {
+  display: block;
+}
+
+.profile-image {
+  float: right;
+  width: 30%;
+  padding: 0 5%;
+  padding-bottom: 50px;
+}
+
+header p {
+  text-align: right;
+  font-size: 1.25em; /* 20/16 */
+  float: left;
+  width: 50%;
+  padding: 0 5%;
+  padding-bottom: 50px;
+}
+
+/*Gallery changes to 2 cols*/
+
+  .portfolio figure {
+    width: 40%;
+    float: left;
+    padding: 5% 5%;
+    background-color: white;
+  }
+
+/*Contact spacing*/
+
+  .contact {
+    padding-top: 20px;
+  }
+
+  .contact p {
+    max-width: 60%;
+  }
+
+
+/*Footer changes with new nav elements*/
+
+  .mobile {
+    display: none;
+  }
+
+  .tablet {
+    display: block;
+    float: right;
+    padding: 10px 10px;
+  }
+
+  li h1:hover{
+    color: red;
+  }
+
+  .borders {
+    border-left: solid #93a0a2 .5px;
+    border-right: solid #93a0a2 .5px;
+  }
+
+}
+
+
+@media (min-width: 1024px) {
+
+/*Social logos in footer*/
 
   a.social {
     display: inline-block;
