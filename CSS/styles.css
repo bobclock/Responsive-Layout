@@ -180,9 +180,16 @@ header p {
   .portfolio figure {
     width: 40%;
     float: left;
-    padding: 5% 5%;
+    padding: 0 5%;
     background-color: white;
+    height: 325px;
   }
+
+  .portfolio .fifteen {
+    display: none;
+  }
+
+
 
 /*Contact spacing*/
 
@@ -221,12 +228,39 @@ header p {
 
 @media (min-width: 1024px) {
 
+
+/*Gallery changes to three columns*/
+
+  .portfolio figure {
+    width: 30%;
+    padding: 0 calc(10% / 6);
+  }
+
+  .portfolio p {
+    padding-bottom: 50px;
+  }
+
+  .portfolio img:hover {
+    transform: scale(1.2);
+  }
+
+  .portfolio .fifteen {
+    display: block;
+  }
+
+
 /*Social logos in footer*/
 
+  footer .name {
+    width: 75px;
+  }
+
   a.social {
-    display: inline-block;
+    display: block;
+    float: left;
     text-indent: -9999px;
-    margin-left: 5px;
+    margin-top: 10px;
+    margin-right: 5px;
     width: 30px;
     height: 30px;
     background-size: 30px 30px;
@@ -245,4 +279,5 @@ header p {
   .social:hover {
     opacity: 1;
   }
+
 }
