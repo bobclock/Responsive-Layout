@@ -1,0 +1,63 @@
+/*Header styles*/
+
+ul {
+  @extend %remove_ul_style;
+  li {
+    @extend %remove_li_style;
+  }
+}
+
+.name {
+  font-size: $oversize_text;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-shadow: 1px 1px $shadow;
+}
+
+.profile-image {
+  max-width: 60%;
+  @include tablet {
+    float: right;
+    width: 30%;
+    padding: 0 5%;
+    padding-bottom: 50px;
+  }
+}
+
+.nav {
+  li {
+    h1 {
+      background-color: $off_white;
+    }
+    @include tablet {
+      display: inline-block;
+    }
+    h1 {
+      text-align: center;
+      max-width: 80%;
+      padding: 15px;
+      margin: 5px auto;
+    }
+    @include tablet {
+      a {
+        display: inline-block;
+      }
+      h1 {
+        width: 120px;
+      }
+      .name {
+        display: block;
+      }
+    }
+  }
+}
+
+@include tablet {
+  header p {
+    text-align: right;
+    font-size: $large_text;
+    float: left;
+    width: 50%;
+    padding: 0 5%;
+  }
+}

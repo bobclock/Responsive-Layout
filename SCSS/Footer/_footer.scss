@@ -1,0 +1,35 @@
+/*Footer styles*/
+
+footer {
+  @extend %footer_styles;
+  display: inline-block;
+  width: 90%;
+  ul {
+    margin: 0 auto;
+    border-top: solid $grey 1px;
+  }
+  .name {
+    width: 40%;
+    float: left;
+    /*border: solid orange;*/
+    @extend %footer_styles;
+    text-align: left;
+    @include desktop {
+      width: 75px;
+    }
+  }
+  .mobile {
+    width: 40%;
+    float: right;
+    /*border: solid green;*/
+    @extend %footer_styles;
+    text-align: right;
+    @include tablet {
+      display: none;
+    }
+  }
+}
+
+.social, .tablet, .copyright {
+  display: none;
+}

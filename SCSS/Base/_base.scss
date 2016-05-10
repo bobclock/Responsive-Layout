@@ -1,0 +1,28 @@
+body {
+  font-family: $stack_varela;
+  background-color: $off_white;
+  color: $dark_grey;
+  text-align: center;
+  font-size: $copy_text;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: $normal_text;
+  text-shadow: .5px .5px $black;
+}
+
+h2 {
+  font-weight: 100;
+  font-size: $large_text;
+}

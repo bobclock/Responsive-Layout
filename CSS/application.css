@@ -1,0 +1,206 @@
+/* 16/16 */
+/* 14/16 */
+/* 20/16 */
+/* 30/16 */
+body {
+  font-family: "Varela Round", sans-serif;
+  background-color: #fafafa;
+  color: #4a4a4a;
+  text-align: center;
+  font-size: 0.875em; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+li {
+  list-style: none; }
+
+h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1em;
+  text-shadow: 0.5px 0.5px #000; }
+
+h2 {
+  font-weight: 100;
+  font-size: 1.25em; }
+
+ul {
+  text-decoration: none;
+  padding: 0; }
+
+ul li {
+  padding: 0;
+  list-style-position: inside; }
+
+/*Header styles*/
+.name {
+  font-size: 1.875em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-shadow: 1px 1px #c4b5b5; }
+
+.profile-image {
+  max-width: 60%; }
+  @media (min-width: 768px) {
+    .profile-image {
+      float: right;
+      width: 30%;
+      padding: 0 5%;
+      padding-bottom: 50px; } }
+
+.nav li h1 {
+  background-color: #fafafa; }
+@media (min-width: 768px) {
+  .nav li {
+    display: inline-block; } }
+.nav li h1 {
+  text-align: center;
+  max-width: 80%;
+  padding: 15px;
+  margin: 5px auto; }
+@media (min-width: 768px) {
+  .nav li a {
+    display: inline-block; }
+  .nav li h1 {
+    width: 120px; }
+  .nav li .name {
+    display: block; } }
+
+@media (min-width: 768px) {
+  header p {
+    text-align: right;
+    font-size: 1.25em;
+    float: left;
+    width: 50%;
+    padding: 0 5%; } }
+/*Contact styles*/
+.contact {
+  padding-top: 20px;
+  padding-bottom: 25px; }
+  @media (min-width: 768px) {
+    .contact {
+      padding-top: 20px; } }
+  .contact p {
+    max-width: 60%; }
+    @media (min-width: 768px) {
+      .contact p {
+        max-width: 60%; } }
+  .contact h1 {
+    padding: 10px 0; }
+
+/*Div styles*/
+.title {
+  margin-top: 50px;
+  padding-bottom: 50px; }
+
+/*Gallery styles*/
+.portfolio {
+  background-color: #fff;
+  padding-top: 50px; }
+  @media (min-width: 768px) {
+    .portfolio figure {
+      width: 40%;
+      float: left;
+      padding: 0 5%;
+      background-color: white;
+      height: 325px; }
+    .portfolio .fifteen {
+      display: none; } }
+  @media (min-width: 1024px) {
+    .portfolio figure {
+      display: inline-block;
+      width: 30%;
+      padding: 0 calc(10% / 6); }
+    .portfolio p {
+      padding-bottom: 50px; }
+    .portfolio img:hover {
+      transform: scale(1.1); }
+    .portfolio .fifteen {
+      display: block; } }
+
+figure img {
+  max-width: 90%;
+  padding-top: 20px; }
+
+.contact p, header p, figure p {
+  max-width: 90%;
+  margin: auto; }
+
+.header p, #telephone {
+  padding-top: 20px; }
+
+@media (min-width: 768px) {
+  .clearfix {
+    clear: both; } }
+footer, footer .name, footer .mobile {
+  font-size: 1em;
+  margin: 10px 0; }
+
+/*Footer styles*/
+footer {
+  display: inline-block;
+  width: 90%; }
+  footer ul {
+    margin: 0 auto;
+    border-top: solid #93a0a2 1px; }
+  footer .name {
+    width: 40%;
+    float: left;
+    /*border: solid orange;*/
+    text-align: left; }
+    @media (min-width: 1024px) {
+      footer .name {
+        width: 75px; } }
+  footer .mobile {
+    width: 40%;
+    float: right;
+    /*border: solid green;*/
+    text-align: right; }
+    @media (min-width: 768px) {
+      footer .mobile {
+        display: none; } }
+
+.social, .tablet, .copyright {
+  display: none; }
+
+/*Footer styles*/
+@media (min-width: 768px) {
+  .tablet {
+    display: block;
+    float: right;
+    padding: 10px 10px; }
+
+  li h1:hover {
+    color: red; }
+
+  .borders {
+    border-left: solid #93a0a2 .5px;
+    border-right: solid #93a0a2 .5px; } }
+@media (min-width: 1024px) {
+  a.social {
+    display: block;
+    float: left;
+    text-indent: -9999px;
+    margin-top: 10px;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    opacity: .4;
+    transition: all .5s; }
+
+  .twitter {
+    background-image: url(https://cdn2.iconfinder.com/data/icons/social-hand-drawn-icons/64/social_54-128.png); }
+
+  .linkedin {
+    background-image: url(https://cdn3.iconfinder.com/data/icons/rcons-social/32/linkedin-512.png); }
+
+  .github {
+    background-image: url(https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png); }
+
+  .social:hover {
+    opacity: 1; } }
+
+/*# sourceMappingURL=application.css.map */

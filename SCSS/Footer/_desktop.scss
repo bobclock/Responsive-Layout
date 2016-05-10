@@ -1,0 +1,29 @@
+
+
+@include desktop {
+
+  a.social {
+    display: block;
+    float: left;
+    text-indent: -9999px;
+    margin-top: 10px;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    opacity: .4;
+    transition: all .5s;
+  }
+  .twitter {
+    background-image: url(https://cdn2.iconfinder.com/data/icons/social-hand-drawn-icons/64/social_54-128.png);
+  }
+  .linkedin {
+    background-image: url(https://cdn3.iconfinder.com/data/icons/rcons-social/32/linkedin-512.png);
+  }
+  .github {
+    background-image: url(https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png);
+  }
+  .social:hover {
+    opacity: 1;
+  }
+}

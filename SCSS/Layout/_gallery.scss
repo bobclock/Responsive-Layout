@@ -1,0 +1,55 @@
+/*Gallery styles*/
+
+.portfolio {
+  background-color: $white;
+  padding-top: 50px;
+  @include tablet {
+    figure {
+      width: 40%;
+      float: left;
+      padding: 0 5%;
+      background-color: white;
+      height: 325px;
+    }
+    .fifteen {
+      display: none;
+    }
+  }
+  @include desktop {
+    figure {
+      display: inline-block;
+      width: 30%;
+      padding: 0 calc(10% / 6);
+    }
+    p {
+      padding-bottom: 50px;
+    }
+    img:hover {
+      transform: scale(1.1);
+    }
+    .fifteen {
+      display: block;
+    }
+  }
+}
+
+
+figure img {
+  max-width: 90%;
+  padding-top: 20px;
+}
+
+.contact p, header p, figure p {
+  max-width: 90%;
+  margin: auto;
+}
+
+.header p, #telephone {
+  padding-top: 20px;
+}
+
+@include tablet {
+  .clearfix {
+    clear: both;
+  }
+}
